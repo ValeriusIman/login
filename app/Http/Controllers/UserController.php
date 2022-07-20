@@ -21,7 +21,7 @@ class UserController extends Controller
             'session' => session('user'),
             'user' => $user,
         ];
-        return view('user.user', $data);
+        return view('User.user', $data);
     }
 
     /**
@@ -34,7 +34,7 @@ class UserController extends Controller
         $data = [
             'session' => session('user'),
         ];
-        return view('user.add_user', $data);
+        return view('User.add_user', $data);
     }
 
     /**
@@ -81,7 +81,7 @@ class UserController extends Controller
             'session' => session('user'),
             'user' => $user
         ];
-        return view('user.view_user', $data);
+        return view('User.view_user', $data);
     }
 
     /**
@@ -97,7 +97,7 @@ class UserController extends Controller
             'session' => session('user'),
             'user' => $user
         ];
-        return view('user.edit_user', $data);
+        return view('User.edit_user', $data);
     }
 
     /**
