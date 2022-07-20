@@ -25,9 +25,9 @@
                     </div>
                 @endif
                 <form id="form-registration" method="POST" action="{{url('/singin')}}">
-                    <!-- @csrf -->
+                    @csrf
                     <div class="input-group mb-3">
-                        <input type="hidden" name="_token" value="{{ csrf_field() }}">
+                        <!-- <input type="hidden" name="_token" value="{{ csrf_field() }}"> -->
                         <input type="text" name="username" id="username" class="form-control" placeholder="Username"
                                required>
                         <div class="input-group-append">
