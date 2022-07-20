@@ -99,6 +99,9 @@
     </div>
     <script>
         $(function () {
+            $('#tgl_lahir').datepicker({
+                format: "yyyy-mm-dd"
+            });
             $("#btn-submit").on('click', function () {
                 $("#form-edit").submit();
             });
